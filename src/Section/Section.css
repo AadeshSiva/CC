@@ -1,7 +1,7 @@
 .home-main {
     height: 100svh;
     width: 100vw;
-    background-image: url('./homebg.svg');
+    background-image: url('../../public/homebg.svg');
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
@@ -396,15 +396,15 @@
 }
 
 .in1 {
-    background: url('./installation1.svg') center / cover no-repeat;
+    background: url('../../public/installation1.svg') center / cover no-repeat;
 }
 
 .in2 {
-    background: url('./installation2.svg') center / cover no-repeat;
+    background: url('../../public/installation2.svg') center / cover no-repeat;
 }
 
 .in3 {
-    background: url('./installation3.svg') center / cover no-repeat;
+    background: url('../../public/installation3.svg') center / cover no-repeat;
 }
 
 .install-head {
@@ -460,7 +460,7 @@
 .real-img1-cover {
     height: 100vh;
     flex: 1;
-    background: url('./real1.svg') center / cover no-repeat;
+    background: url('../../public/real1.svg') center / cover no-repeat;
     border-radius: 7px;
 }
 
@@ -523,11 +523,11 @@
 }
 
 .real-img2-cover {
-    background-image: url('./real2.svg');
+    background-image: url('../../public/real2.svg');
 }
 
 .real-img3-cover {
-    background-image: url('./real3.svg');
+    background-image: url('../../public/real3.svg');
 }
 
 @media (max-width: 1000px) {
@@ -634,19 +634,19 @@
 }
 
 .tp1 {
-    background: url('./team1.svg') center / cover no-repeat;
+    background: url('../../public/team1.svg') center / cover no-repeat;
 }
 
 .tp2 {
-    background: url('./team2.svg') center / cover no-repeat;
+    background: url('../../public/team2.svg') center / cover no-repeat;
 }
 
 .tp3 {
-    background: url('./team3.svg') center / cover no-repeat;
+    background: url('../../public/team3.svg') center / cover no-repeat;
 }
 
 .tp4 {
-    background: url('./team4.svg') center / cover no-repeat;
+    background: url('../../public/team4.svg') center / cover no-repeat;
 }
 
 .team-data {
