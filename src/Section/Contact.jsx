@@ -1,3 +1,9 @@
+import t1 from "/team1.svg"
+import t2 from "/team2.svg"
+import t3 from "/team3.svg"
+import t4 from "/team4.svg"
+
+
 export default function Contact() {
     return (
         <main className="contact-main" id="contact">
@@ -7,7 +13,8 @@ export default function Contact() {
             <div className="team-list contact-inner">
                 <p className="team-head">Our Team</p>
                 <div className="team-items">
-                    <div className="team-profile tp1">
+                    <div className="team-profile">
+                        <img src={t1} alt="" className="profile-img" />
                     </div>
                     <div className="team-data">
                         <div className="team-info">
@@ -25,7 +32,8 @@ export default function Contact() {
                 </div>
 
                 <div className="team-items">
-                    <div className="team-profile tp2">
+                    <div className="team-profile ">
+                        <img src={t2} alt="" className="profile-img" />
                     </div>
                     <div className="team-data">
                         <div className="team-info">
@@ -43,7 +51,9 @@ export default function Contact() {
                 </div>
 
                 <div className="team-items">
-                    <div className="team-profile tp3">
+                    <div className="team-profile ">
+                        <img src={t3} alt="" className="profile-img" />
+
                     </div>
                     <div className="team-data">
                         <div className="team-info">
@@ -61,7 +71,9 @@ export default function Contact() {
                 </div>
 
                 <div className="team-items">
-                    <div className="team-profile tp4">
+                    <div className="team-profile ">
+                        <img src={t4} alt="" className="profile-img" />
+
                     </div>
                     <div className="team-data">
                         <div className="team-info">

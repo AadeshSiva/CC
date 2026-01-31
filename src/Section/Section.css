@@ -580,19 +580,22 @@
 }
 
 /* =====================================Contact=============================== */
+/* ================= MAIN LAYOUT ================= */
 
 .contact-main {
-    /* padding: 2em 0; */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 1.5em;
-    padding-bottom: 1em !important;
+    padding: 1em 0 1em 0;
 }
 
-.contact-inner,
-.contact-wrapper {
+/* Left (Team) + Right (Contact) */
+.team-list,
+.contact-side {
     width: calc(100% / 2.3);
+    display: flex;
+    flex-direction: column;
 }
 
 /* ================= TEAM SECTION ================= */
@@ -601,116 +604,7 @@
     font-size: x-large;
     font-family: "Instrument Serif", serif;
     font-weight: 600;
-}
-
-.team-list {
-    padding: 0;
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.team-items {
-    padding: 0.5em;
-    outline: 1px solid #000;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 1.2em;
-    background: #fff;
-}
-
-.team-profile {
-    width: 90px;
-    min-width: 90px;
-    aspect-ratio: 1;
-    border-radius: 8px;
-    flex-shrink: 0;
-}
-
-.tp1 {
-    background: url('../../public/team1.svg') center / cover no-repeat;
-}
-
-.tp2 {
-    background: url('../../public/team2.svg') center / cover no-repeat;
-}
-
-.tp3 {
-    background: url('../../public/team3.svg') center / cover no-repeat;
-}
-
-.tp4 {
-    background: url('../../public/team4.svg') center / cover no-repeat;
-}
-
-.team-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1;
-}
-
-.team-info {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-.team-name {
-    font-size: 1.05rem;
-    font-weight: 600;
-    line-height: 1;
-}
-
-.team-role {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #666;
-}
-
-.team-social {
-    display: flex;
-    align-items: center;
-    gap: 0.7em;
-    margin-top: 0.4em;
-    flex-wrap: wrap;
-}
-
-.social-img {
-    height: 1.4em;
-    width: auto;
-    display: block;
-    transition: transform 0.2s ease;
-}
-
-.social-img:hover {
-    transform: scale(1.1);
-}
-
-
-.contact-main {
-    /* padding: 4em 0; */
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1.5em;
-}
-
-.team-list,
-.contact-side {
-    width: calc(100% / 2.3);
-    display: flex;
-    flex-direction: column;
-}
-
-
-.team-head {
-    font-size: x-large;
-    font-family: "Instrument Serif", serif;
-    font-weight: 600;
+    margin-bottom: 0.5em;
 }
 
 .team-list {
@@ -718,12 +612,13 @@
 }
 
 .team-items {
-    padding: 0.5em;
+    padding: 0.7em;
     border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 1.2em;
     background: #fff;
+    border: 1px solid #000;
 }
 
 .team-profile {
@@ -731,29 +626,21 @@
     min-width: 90px;
     aspect-ratio: 1;
     border-radius: 8px;
+    overflow: hidden;
     flex-shrink: 0;
 }
 
-.tp1 {
-    background: url('./team1.svg') center/cover no-repeat;
-}
-
-.tp2 {
-    background: url('./team2.svg') center/cover no-repeat;
-}
-
-.tp3 {
-    background: url('./team3.svg') center/cover no-repeat;
-}
-
-.tp4 {
-    background: url('./team4.svg') center/cover no-repeat;
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .team-data {
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: center;
 }
 
 .team-info {
@@ -790,12 +677,13 @@
 /* ================= CONTACT SECTION ================= */
 
 .contact-side {
-    display: flex;
-    flex-direction: column;
     gap: 0.8em;
 }
 
 .contact-heading {
+    font-size: x-large;
+    font-family: "Instrument Serif", serif;
+    font-weight: 600;
     margin-left: 0.3em;
 }
 
@@ -814,6 +702,7 @@
     font-size: 0.95rem;
     margin-bottom: 1.5em;
     color: #333;
+    font-weight: 500;
 }
 
 .form-wrap {
@@ -856,7 +745,7 @@
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     transition: background 0.2s ease, transform 0.1s ease;
 }
 
@@ -868,6 +757,7 @@
     transform: scale(0.98);
 }
 
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 900px) {
     .contact-main {
@@ -881,25 +771,3 @@
         width: 100%;
     }
 }
-
-/* 
-@media (max-width: 600px) {
-    .team-items {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1em;
-    }
-
-    .team-profile {
-        width: 120px;
-        min-width: 120px;
-    }
-
-    .team-name {
-        font-size: 1rem;
-    }
-
-    .team-role {
-        font-size: 0.85rem;
-    }
-} */

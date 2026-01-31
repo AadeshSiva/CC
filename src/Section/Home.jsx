@@ -5,7 +5,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 export default function Home() {
     return (
         <main className="home-main" id='home'>
-            <img src={homebg} alt="" class="home-bg" />
+            <img src={homebg} alt="" className="home-bg" />
 
             <div className="home-middle">
                 <p className="home-middle-head">
